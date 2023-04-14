@@ -1,0 +1,18 @@
+logging:
+    level:
+        org:
+            springframework:
+                core:
+                    LocalVariableTableParameterNameDiscoverer: 'OFF'
+spring:
+    datasource:
+        password: root
+        url: jdbc:postgresql://localhost:2000/address_book
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
